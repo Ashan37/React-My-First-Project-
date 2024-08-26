@@ -1,0 +1,55 @@
+/* Base styles for .content container */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 80vh;
+    padding: 10px; /* Added padding to ensure content doesn't touch screen edges */
+    box-sizing: border-box; /* Ensures padding is included in width calculations */
+}
+
+/* Base styles for .content1 */
+.content1 {
+    font-family: 'Poppins', sans-serif; /* Added generic font fallback */
+    background: rgb(25, 37, 53);
+    width: 90%;
+    max-width: 1200px; /* Limits width on larger screens */
+    border-radius: 20px;
+    padding: 20px;
+    color: aliceblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow for better appearance */
+}
+
+/* Paragraph style inside .content1 */
+.content1 p {
+    text-align: justify;
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Media query for smaller screens (mobile devices) */
+@media (max-width: 768px) {
+    .content {
+        height: auto; /* Adjusts height to content */
+        margin-top: 10px; /* Less margin on top for smaller screens */
+    }
+
+    .content1 {
+        width: 95%; /* Increase width on smaller screens */
+        padding: 15px; /* Reduce padding */
+        border-radius: 10px; /* Less border radius for smaller screens */
+    }
+}
+
+/* Media query for very small screens (small mobile devices) */
+@media (max-width: 480px) {
+    .content {
+        margin-top: 5px; /* Further reduce top margin */
+        padding: 5px; /* Less padding on very small screens */
+    }
+
+    .content1 {
+        width: 100%; /* Full width on very small screens */
+        padding: 10px; /* Further reduce padding */
+    }
+}

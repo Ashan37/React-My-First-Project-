@@ -1,0 +1,48 @@
+.qqq{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+.topicbox{
+    background: rgb(20, 29, 41);
+    color: white;
+    width: 10%;
+    height: 90px;
+    font-family: poppins;  
+    border-radius: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 50px;
+}
+.topic{
+    display: grid;
+    place-items: center;
+
+}
+@media (max-width: 600px) {
+    .topicbox {
+        width: 90%; /* Wider width for mobile devices */
+        padding: 1.5rem; /* More padding for better spacing */
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+}
+
+/* For tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .topicbox {
+        width: 70%; /* Adjust width for tablet */
+        padding: 1rem;
+        font-size: 1rem; /* Slightly larger font for tablets */
+    }
+}
+
+/* For desktop */
+@media (min-width: 1024px) {
+    .topicbox {
+        width: 30%; /* Adjust width for larger screens */
+        padding: 1rem;
+        font-size: 1.1rem; /* Larger font size for readability on desktop */
+    }
+}
